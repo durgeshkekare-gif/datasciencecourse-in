@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://datasciencecourse.in/</loc><priority>1.0</priority></url>
   <url><loc>https://datasciencecourse.in/blog/</loc><priority>0.7</priority></url>
+  <url><loc>https://datasciencecourse.in/programs/</loc><priority>0.9</priority></url>
+  <url><loc>https://datasciencecourse.in/institutions/</loc><priority>0.9</priority></url>
+  <url><loc>https://datasciencecourse.in/compare.html</loc><priority>0.7</priority></url>
+  <url><loc>https://datasciencecourse.in/apply.html</loc><priority>0.7</priority></url>
+  <url><loc>https://datasciencecourse.in/privacy.html</loc><priority>0.7</priority></url>
+  <url><loc>https://datasciencecourse.in/disclaimer.html</loc><priority>0.7</priority></url>
   <url><loc>https://datasciencecourse.in/blog/best-data-science-courses-india-2026.html</loc><priority>0.7</priority></url>
   <url><loc>https://datasciencecourse.in/blog/iit-roorkee-data-science-course-review.html</loc><priority>0.7</priority></url>
   <url><loc>https://datasciencecourse.in/blog/data-science-vs-ai-vs-machine-learning-india.html</loc><priority>0.7</priority></url>
   <url><loc>https://datasciencecourse.in/blog/iim-kozhikode-analytics-genai-review.html</loc><priority>0.7</priority></url>
   <url><loc>https://datasciencecourse.in/blog/genai-llm-courses-india-2026.html</loc><priority>0.7</priority></url>
-  <url><loc>https://datasciencecourse.in/apply.html</loc><priority>0.7</priority></url>
-  <url><loc>https://datasciencecourse.in/privacy.html</loc><priority>0.7</priority></url>
-  <url><loc>https://datasciencecourse.in/disclaimer.html</loc><priority>0.7</priority></url>
+  <url><loc>https://datasciencecourse.in/blog/free-vs-paid-data-science-courses-india.html</loc><priority>0.7</priority></url>
+  <url><loc>https://datasciencecourse.in/blog/data-science-salary-india-2026.html</loc><priority>0.7</priority></url>
+  <url><loc>https://datasciencecourse.in/blog/python-for-data-science-india-2026.html</loc><priority>0.7</priority></url>
+  <url><loc>https://datasciencecourse.in/blog/data-science-course-for-working-professionals-india.html</loc><priority>0.7</priority></url>
+  <url><loc>https://datasciencecourse.in/blog/iit-madras-data-science-programs-comparison.html</loc><priority>0.7</priority></url>
+  <url><loc>https://datasciencecourse.in/blog/data-science-certificate-vs-degree-india.html</loc><priority>0.7</priority></url>
+  <url><loc>https://datasciencecourse.in/blog/data-science-jobs-india-2026-hiring-trends.html</loc><priority>0.7</priority></url>
 </urlset>
