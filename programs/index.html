@@ -2,113 +2,556 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>All Data Science Programs India 2026 | IIT IIM Certificates | datasciencecourse.in</title>
-<meta name="description" content="All IIT and IIM data science certificate programs India 2026 — IIT Roorkee, IIT Delhi, IIT Madras, IIT Guwahati, IIM Kozhikode. Fees, duration and enrollment links.">
+<title>All Data Science & AI Programs India 2026 — 16 IIT IIM Certificates | datasciencecourse.in</title>
+<meta name="description" content="All 16 data science, AI, analytics and digital leadership certificate programs from IITs and IIMs in India 2026 — with fees, duration, curriculum details and enrollment links.">
+<link rel="canonical" href="https://datasciencecourse.in/programs/">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/style.css">
-<style>.prog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.1rem;margin-top:1.5rem;}</style>
+<style>
+.prog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:1.25rem;margin-top:1.5rem;}
+.non-jaro-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1rem;margin-top:1.25rem;}
+@media(max-width:600px){.prog-grid{grid-template-columns:1fr;}.non-jaro-grid{grid-template-columns:1fr;}}
+</style>
 </head>
 <body>
 <nav class="nav"><a href="/" class="nav-logo"><span class="ds">Data</span>ScienceCourse.in</a><ul class="nav-links"><li><a href="/programs/" class='on'>Programs</a></li><li><a href="/institutions/" >Institutions</a></li><li><a href="/compare.html" >Compare</a></li><li><a href="/blog/" >Blog</a></li></ul><a href="/apply.html" class="nav-cta">Free counselling</a><button class="nav-ham">&#9776;</button></nav>
-<div style="background:var(--dark);padding:52px 4%;">
+<div style="background:var(--dark);padding:56px 4%;">
   <div class="inner">
-    <span class="eyebrow">7 programs · June 2026</span>
-    <h1 style="font-family:var(--font-head);font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--white);letter-spacing:-.03em;margin-bottom:.6rem;">All data science &amp; AI programs</h1>
-    <p style="font-size:.875rem;color:rgba(255,255,255,.42);max-width:560px;">★ = Enrollment support &amp; EMI available. ↗ = Enroll directly. All programs for working professionals — weekend online sessions.</p>
+    <span class="eyebrow">16 programs with enrollment support · June 2026</span>
+    <h1 style="font-family:var(--font-head);font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--white);letter-spacing:-.03em;margin-bottom:.65rem;">All data science, AI &amp; analytics programs</h1>
+    <p style="font-size:.875rem;color:rgba(255,255,255,.42);max-width:620px;margin-bottom:1.4rem;">Covering pure data science, ML, GenAI, business analytics, fintech, AI strategy, digital leadership and product management. All programs for working professionals — weekend online sessions. ★ = enrollment support &amp; EMI available.</p>
+    <div style="display:flex;gap:.55rem;flex-wrap:wrap;">
+      <button class="fpill on" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.75);" onclick="filterCards('all',this)">All (16)</button>
+      <button class="fpill" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);color:rgba(255,255,255,.45);" onclick="filterCards('ds',this)">Pure DS / ML / AI</button>
+      <button class="fpill" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);color:rgba(255,255,255,.45);" onclick="filterCards('genai',this)">GenAI / LLMs</button>
+      <button class="fpill" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);color:rgba(255,255,255,.45);" onclick="filterCards('business',this)">Business Analytics</button>
+      <button class="fpill" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);color:rgba(255,255,255,.45);" onclick="filterCards('leadership',this)">AI Leadership</button>
+      <button class="fpill" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);color:rgba(255,255,255,.45);" onclick="filterCards('cyber',this)">AI & Cybersecurity</button>
+      <button class="fpill" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);color:rgba(255,255,255,.45);" onclick="filterCards('fintech',this)">Fintech</button>
+      <button class="fpill" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);color:rgba(255,255,255,.45);" onclick="filterCards('product',this)">Product + Analytics</button>
+      <button class="fpill" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);color:rgba(255,255,255,.45);" onclick="filterCards('global',this)">Global Programs</button>
+    </div>
   </div>
 </div>
+
 <div class="inner" style="padding:52px 4%;">
-  <div class="fbar">
-    <button class="fpill on" onclick="filterCards('all',this)">All (7)</button>
-    <button class="fpill" onclick="filterCards('iit',this)">IIT</button>
-    <button class="fpill" onclick="filterCards('iim',this)">IIM</button>
-    <button class="fpill" onclick="filterCards('genai',this)">GenAI / LLMs</button>
-    <button class="fpill" onclick="filterCards('global',this)">Global Collab</button>
+  <div class="prog-grid"><div class="pcard" data-card data-type="ds" id="iitr-ds">
+  <div class="pcard-head">
+    <div class="pcard-inst">IIT Roorkee · NIRF #7 · CEC</div>
+    <div class="pcard-title">PG Certificate in Applied Data Science & AI</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#EFF6FF;color:#2563EB;letter-spacing:.04em;">Python</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F0FDF4;color:#059669;letter-spacing:.04em;">ML</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F0FDF4;color:#059669;letter-spacing:.04em;">Deep Learning</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#ECFDF5;color:#00C896;letter-spacing:.04em;">GenAI</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F5F3FF;color:#7C3AED;letter-spacing:.04em;">NLP</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F5F3FF;color:#7C3AED;letter-spacing:.04em;">Computer Vision</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>~6 months</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate (50% aggregate) · 1 yr exp preferred · Any discipline</span></span>
+    </div>
   </div>
-  <div class="prog-grid">
-
-    <div class="pcard" data-card data-type="iit"><div class="pcard-head">
-      <div class="pcard-inst">IIT Roorkee · NIRF #7</div>
-      <div class="pcard-title">PG Certificate in Applied Data Science &amp; AI</div>
-      <div class="pcard-tags"><span class="tag tag-green">IIT Certificate</span><span class="tag tag-blue">Python · ML · Deep Learning · GenAI</span></div>
-      <div class="pcard-meta"><span>📅 ~6 months</span><span>💻 Online + 2 optional campus</span></div>
-    </div><div class="pcard-foot">
-      <div class="pcard-fee">₹1.5L + GST<small>2 × ₹74,250</small></div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      Python, pandas, numpy, scikit-learn, TensorFlow/PyTorch, GenAI, GPTs, Big Data
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> Technical & non-technical professionals wanting hands-on DS + IIT credential with optional campus immersion
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> 2 optional modules at Greater Noida (3 days) & IIT Roorkee campus (5 days)</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">₹1.5L + GST<small>2 × ₹74,250 · App fee ₹1,500</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=iitr-ds" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
       <a href="https://www.jaroeducation.com/post-graduate-certificate-programme-in-applied-data-science-ai-iit-roorkee/" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
-    </div></div>
-
-    <div class="pcard" data-card data-type="iit"><div class="pcard-head">
-      <div class="pcard-inst">IIT Delhi · NIRF #2 · CEP</div>
-      <div class="pcard-title">Executive Programme in Applied Data Science using ML &amp; AI</div>
-      <div class="pcard-tags"><span class="tag tag-green">IIT Certificate</span><span class="tag tag-blue">ML · AI · Deep Learning · NLP</span></div>
-      <div class="pcard-meta"><span>📅 ~6 months</span><span>💻 Online (live sessions)</span></div>
-    </div><div class="pcard-foot">
-      <div class="pcard-fee">~₹1.5–2L + GST<small>EMI available</small></div>
-      <a href="https://www.jaroeducation.com/pages/iit-delhi/applied-data-science-using-machine-learning-artificial-intelligence" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
-    </div></div>
-
-    <div class="pcard" data-card data-type="iit"><div class="pcard-head">
-      <div class="pcard-inst">IIT Madras · NIRF #1 · IITM Pravartak</div>
-      <div class="pcard-title">Executive Certification in Advanced Data Science &amp; Applications</div>
-      <div class="pcard-tags"><span class="tag tag-green">IIT Certificate</span><span class="tag tag-blue">Deep Learning · AI · Analytics</span><span class="tag tag-gray">10 months</span></div>
-      <div class="pcard-meta"><span>📅 10 months</span><span>💻 Hybrid</span></div>
-    </div><div class="pcard-foot">
-      <div class="pcard-fee">~₹1.5L + GST<small>EMI available</small></div>
-      <a href="https://www.jaroeducation.com/executive-certification-in-advanced-data-science-applications-iitm-pravartak" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
-    </div></div>
-
-    <div class="pcard" data-card data-type="iit genai"><div class="pcard-head">
-      <div class="pcard-inst">IIT Madras · NIRF #1 · IITM Pravartak</div>
-      <div class="pcard-title">Advanced Certificate in Machine Learning, GenAI &amp; LLMs</div>
-      <div class="pcard-tags"><span class="tag tag-green">IIT Certificate</span><span class="tag tag-blue">GenAI · LLMs · ML</span></div>
-      <div class="pcard-meta"><span>📅 ~6 months</span><span>💻 Online (live weekends)</span></div>
-    </div><div class="pcard-foot">
-      <div class="pcard-fee">~₹1.5L + GST<small>EMI available</small></div>
-      <a href="https://www.jaroeducation.com/advanced-generative-ai-machine-learning-iitm-pravartak" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
-    </div></div>
-
-    <div class="pcard" data-card data-type="iit global"><div class="pcard-head">
-      <div class="pcard-inst">IIT Madras + Rotman School of Management, UofT</div>
-      <div class="pcard-title">Advanced Data Science Certificate Program (India–Canada Joint)</div>
-      <div class="pcard-tags"><span class="tag tag-green">IIT + Global</span><span class="tag tag-blue">Data Science · Analytics</span></div>
-      <div class="pcard-meta"><span>📅 ~6 months</span><span>💻 Online (live)</span></div>
-    </div><div class="pcard-foot">
-      <div class="pcard-fee">₹1.61L + GST<small>India-Canada joint</small></div>
-      <a href="https://www.jaroeducation.com/advanced-data-science-certificate-program-rotman-school-of-management-uoft-iitm-pravartak-technology-innovation-hub-of-iit-madras" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
-    </div></div>
-
-    <div class="pcard" data-card data-type="iit"><div class="pcard-head">
-      <div class="pcard-inst">IIT Guwahati · NIRF #7 · E&amp;ICT Academy (MeitY)</div>
-      <div class="pcard-title">Advanced Professional Certification in Data Science &amp; ML</div>
-      <div class="pcard-tags"><span class="tag tag-green">IIT Certificate</span><span class="tag tag-blue">DS · ML · Python</span><span class="tag tag-gray">MeitY backed</span></div>
-      <div class="pcard-meta"><span>📅 ~6 months</span><span>💻 Online (live)</span></div>
-    </div><div class="pcard-foot">
-      <div class="pcard-fee">~₹1.5L + GST<small>Scholarship up to ₹20K*</small></div>
-      <a href="https://www.jaroeducation.com/advanced-professional-certification-programme-in-data-science-machine-learning-eict-iit-guwahati" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
-    </div></div>
-
-    <div class="pcard" data-card data-type="iim genai"><div class="pcard-head">
-      <div class="pcard-inst">IIM Kozhikode · NIRF #10 · AACSB</div>
-      <div class="pcard-title">PCP in Applied Analytics &amp; GenAI for Business Decisions</div>
-      <div class="pcard-tags"><span class="tag tag-green">IIM Certificate</span><span class="tag tag-blue">Analytics · GenAI · Business</span></div>
-      <div class="pcard-meta"><span>📅 1 year</span><span>💻 Online (live)</span><span>👤 No coding needed</span></div>
-    </div><div class="pcard-foot">
-      <div class="pcard-fee">~₹2L + GST<small>EMI available</small></div>
-      <a href="https://www.jaroeducation.com/professional-certificate-programme-applied-analytic-gen-ai-business-decisions-iim-kozhikode" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
-    </div></div>
-
+    </div>
   </div>
-  <p style="font-size:.72rem;color:var(--text-muted);margin-top:1.25rem;">★ = Enrollment partner available (apply support, EMI, career services). Programs verified June 2026.</p>
+</div><div class="pcard" data-card data-type="ds" id="iitd-ds">
+  <div class="pcard-head">
+    <div class="pcard-inst">IIT Delhi · NIRF #2 · CEP, Dept. of Mathematics</div>
+    <div class="pcard-title">Executive Programme in Applied Data Science using ML & AI</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F0FDF4;color:#059669;letter-spacing:.04em;">ML</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#EFF6FF;color:#2563EB;letter-spacing:.04em;">AI</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F0FDF4;color:#059669;letter-spacing:.04em;">Deep Learning</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F5F3FF;color:#7C3AED;letter-spacing:.04em;">NLP</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Statistics</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>~6 months</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate from any recognised university · Technical or non-technical</span></span>
+    </div>
+  </div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      Linear algebra, probability, regression, classification, clustering, reinforcement learning, deep learning, AI system design
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> Engineers, IT professionals and analysts wanting rigorous ML/AI credential from NIRF #2 institution
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> No campus requirement · 70% attendance mandatory (live online)</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">~₹1.5–2L + GST<small>EMI available</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=iitd-ds" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
+      <a href="https://www.jaroeducation.com/executive-programme-in-applied-data-science-using-machine-learning-artificial-intelligence" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
+    </div>
+  </div>
+</div><div class="pcard" data-card data-type="ds" id="iitm-adv-ds">
+  <div class="pcard-head">
+    <div class="pcard-inst">IIT Madras (IITM Pravartak) · NIRF #1 · DST / Govt of India funded</div>
+    <div class="pcard-title">Executive Certification in Advanced Data Science & Applications</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#EFF6FF;color:#2563EB;letter-spacing:.04em;">AI</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F0FDF4;color:#059669;letter-spacing:.04em;">Deep Learning</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Data Analytics</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Scientific Computing</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Software Engineering</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>10 months</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate/4-yr Engineering/B.Sc/M.Sc · 3 yrs exp preferred · STEM background · Comfort with maths</span></span>
+    </div>
+  </div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      Python (numpy, pandas, matplotlib), scikit-learn, PyTorch, TensorFlow, deep neural networks, LLMs, regression/classification, data pipelines
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> STEM professionals wanting the most academically rigorous data science program from India's NIRF #1 institution
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> Optional campus immersion at IIT Madras campus</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">~₹1.5L + GST<small>EMI available · Hybrid</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=iitm-adv-ds" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
+      <a href="https://www.jaroeducation.com/executive-certification-in-advanced-data-science-applications-iitm-pravartak" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
+    </div>
+  </div>
+</div><div class="pcard" data-card data-type="genai" id="iitm-genai">
+  <div class="pcard-head">
+    <div class="pcard-inst">IIT Madras (IITM Pravartak) · NIRF #1 · DST / Govt of India funded</div>
+    <div class="pcard-title">Advanced Certificate in Machine Learning, GenAI & LLMs for Business Applications</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#ECFDF5;color:#00C896;letter-spacing:.04em;">GenAI</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#ECFDF5;color:#00C896;letter-spacing:.04em;">LLMs</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F0FDF4;color:#059669;letter-spacing:.04em;">ML</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#ECFDF5;color:#00C896;letter-spacing:.04em;">Transformers</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Business Applications</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#EFF6FF;color:#2563EB;letter-spacing:.04em;">Python</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>~6 months</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate · Any background · Professionals aiming to lead AI-powered transformation</span></span>
+    </div>
+  </div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      AI/ML fundamentals, deep learning, LLMs, GPT pipeline, Transformers, tokenisation, embeddings, position encoding, fine-tuning, GenAI business use cases
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> Software engineers and tech professionals wanting GenAI specialisation; professionals building AI-powered products
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> No campus requirement · Live weekend sessions</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">~₹1.5L + GST<small>EMI available</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=iitm-genai" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
+      <a href="https://www.jaroeducation.com/advanced-generative-ai-machine-learning-iitm-pravartak" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
+    </div>
+  </div>
+</div><div class="pcard" data-card data-type="global" id="iitm-rotman">
+  <div class="pcard-head">
+    <div class="pcard-inst">IIT Madras (IITM Pravartak) + Rotman School of Management, UofT · NIRF #1 + QS-ranked UofT</div>
+    <div class="pcard-title">Advanced Data Science Certificate Program (India–Canada Joint)</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Data Science</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#FFF7ED;color:#F97316;letter-spacing:.04em;">Analytics</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Global Credential</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">India-Canada</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>~6 months</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate · Working professional · Any background</span></span>
+    </div>
+  </div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      New-age data analytics tools, actionable insights from real-world data, interdisciplinary curriculum blending Rotman's business analytics with IIT Madras technical depth
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> Professionals wanting both IIT Madras credential and Canadian business school association; those with international career plans
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> No campus requirement · Live sessions from both institutions</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">₹1.61L + GST<small>India-Canada joint credential</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=iitm-rotman" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
+      <a href="https://www.jaroeducation.com/advanced-data-science-certificate-program-rotman-school-of-management-uoft-iitm-pravartak-technology-innovation-hub-of-iit-madras" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
+    </div>
+  </div>
+</div><div class="pcard" data-card data-type="ds" id="iitg-ds">
+  <div class="pcard-head">
+    <div class="pcard-inst">IIT Guwahati — E&ICT Academy (MeitY, Govt of India) · NIRF #7 · MeitY funded</div>
+    <div class="pcard-title">Advanced Professional Certification in Data Science & Machine Learning</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Data Science</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F0FDF4;color:#059669;letter-spacing:.04em;">ML</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#EFF6FF;color:#2563EB;letter-spacing:.04em;">Python</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">E&ICT</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">MeitY</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>~6 months</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate (50% aggregate, 45% reserved) · 2 yrs work exp · Any discipline</span></span>
+    </div>
+  </div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      Data science methodology, ML algorithms, deep learning, Python, real-world datasets, industry case studies
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> Working professionals wanting IIT credential at the most affordable fee point; those eligible for the ₹20K scholarship
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> No campus requirement · Live online sessions</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">~₹1.5L + GST<small>Scholarship up to ₹20,000 available</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=iitg-ds" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
+      <a href="https://www.jaroeducation.com/advanced-professional-certification-programme-in-data-science-machine-learning-eict-iit-guwahati" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
+    </div>
+  </div>
+</div><div class="pcard" data-card data-type="business" id="iimk-analytics">
+  <div class="pcard-head">
+    <div class="pcard-inst">IIM Kozhikode · NIRF #3 · EQUIS · AMBA · AACSB</div>
+    <div class="pcard-title">PCP in Applied Analytics & GenAI for Business Decisions</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#FFF7ED;color:#F97316;letter-spacing:.04em;">Analytics</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#ECFDF5;color:#00C896;letter-spacing:.04em;">GenAI</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#FFF7ED;color:#F97316;letter-spacing:.04em;">Business Decisions</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#FEF3C7;color:#D97706;letter-spacing:.04em;">No Coding</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Machine Learning</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>12 months</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate (10+2+3) from any recognised university · Any work experience · No coding background needed</span></span>
+    </div>
+  </div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      ML concepts (conceptual), social media analytics, big-data frameworks, predictive analytics, business intelligence, GenAI for business, data-driven decision-making
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> Business professionals, managers, MBAs and non-technical leaders who want to use analytics and GenAI for decisions without becoming data engineers
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> No campus requirement · Case-based live sessions</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">~₹2L + GST<small>EMI available · No coding needed</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=iimk-analytics" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
+      <a href="https://www.jaroeducation.com/professional-certificate-programme-applied-analytic-gen-ai-business-decisions-iim-kozhikode" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
+    </div>
+  </div>
+</div><div class="pcard" data-card data-type="business" id="iimk-sales-mktg">
+  <div class="pcard-head">
+    <div class="pcard-inst">IIM Kozhikode · NIRF #3 · EQUIS · AMBA · AACSB</div>
+    <div class="pcard-title">PCP in Strategic Sales Management & New Age Marketing</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Marketing Analytics</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Sales</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Digital Marketing</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Data-Driven</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>~1 year</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate · Working professional · Sales/marketing background preferred</span></span>
+    </div>
+  </div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      Analytics for sales, digital marketing metrics, customer analytics, attribution modelling, CRM analytics, new-age marketing platforms
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> Sales managers, marketing professionals and brand managers wanting data-driven marketing skills with IIM credential
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> No campus requirement</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">~₹2L + GST<small>EMI available</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=iimk-sales-mktg" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
+      <a href="https://www.jaroeducation.com/professional-certificate-programme-in-strategic-sales-management-and-new-age-marketing-iim-kozhikode" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
+    </div>
+  </div>
+</div><div class="pcard" data-card data-type="business" id="iimt-biz-analytics">
+  <div class="pcard-head">
+    <div class="pcard-inst">IIM Tiruchirappalli (Trichy) · NIRF #18</div>
+    <div class="pcard-title">PG Certificate in Business Analytics & Applications</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Business Analytics</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Predictive Analytics</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Data Visualisation</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">BI Tools</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>6–9 months</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate · Working professional · Any background</span></span>
+    </div>
+  </div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      Predictive analytics, statistical methods, data visualisation, BI tools (Tableau, Power BI), ML for business applications, real-world case studies
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> Mid-level professionals wanting an IIM analytics credential; operations, finance and business professionals wanting data skills
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> No campus requirement · Live online</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">~₹2–3L + GST<small>EMI available</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=iimt-biz-analytics" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
+      <a href="https://www.jaroeducation.com/pg-certificate-programme-in-business-analytics-and-applications-iim-trichy" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
+    </div>
+  </div>
+</div><div class="pcard" data-card data-type="fintech" id="iimn-fintech">
+  <div class="pcard-head">
+    <div class="pcard-inst">IIM Nagpur · NIRF #25 · IIM Act of Parliament</div>
+    <div class="pcard-title">PG Certificate Programme in Fintech</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#FDF4FF;color:#9333EA;letter-spacing:.04em;">Fintech</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Data Science</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#EFF6FF;color:#2563EB;letter-spacing:.04em;">AI</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Blockchain</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Digital Banking</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>~1 year</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate · Working professional · Finance/banking/tech background preferred</span></span>
+    </div>
+  </div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      Fintech ecosystem, digital payments, blockchain, AI in BFSI, data science for finance, regulatory technology (RegTech), cybersecurity basics in finance
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> Banking, BFSI and fintech professionals wanting a formal IIM credential in fintech and data-driven finance
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> No campus requirement</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">~₹2–3L + GST<small>EMI available</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=iimn-fintech" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
+      <a href="https://www.jaroeducation.com/pg-certificate-programme-in-fintech-iim-nagpur" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
+    </div>
+  </div>
+</div><div class="pcard" data-card data-type="cyber" id="iimi-ai-cyber">
+  <div class="pcard-head">
+    <div class="pcard-inst">IIM Indore · NIRF #7 · Triple Crown (AACSB + AMBA + EQUIS)</div>
+    <div class="pcard-title">Executive Programme in AI & Cybersecurity for Organizations</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#EFF6FF;color:#2563EB;letter-spacing:.04em;">AI</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#FEF2F2;color:#DC2626;letter-spacing:.04em;">Cybersecurity</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Machine Learning</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Risk Management</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Compliance</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>~1 year</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate · Any background · Non-engineers/non-tech welcome · Early-career IT, project managers</span></span>
+    </div>
+  </div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      AI fundamentals, ML, big data analytics, Power BI, Tableau, GenAI, blockchain, quantum computing basics, cybersecurity strategy, risk management, incident response, compliance (SOC2, ISO27001)
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> IT managers, project managers, non-technical managers wanting to lead digital security and AI initiatives; career switchers into AI/cyber
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> No campus · 75% attendance mandatory</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">~₹3–4L + GST<small>EMI available</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=iimi-ai-cyber" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
+      <a href="https://www.jaroeducation.com/executive-programme-in-artificial-intelligence-and-cyber-security-for-organizations-iim-indore" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
+    </div>
+  </div>
+</div><div class="pcard" data-card data-type="leadership" id="iitk-cdao-eicta">
+  <div class="pcard-head">
+    <div class="pcard-inst">IIT Kanpur — EICTA Consortium (MeitY) · NIRF #5 · MeitY initiative · IITs + NITs + IIITs</div>
+    <div class="pcard-title">Chief Digital & AI Officer (CDAO) Programme — EICTA Consortium</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Digital Transformation</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">AI Strategy</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">CDO/CDAO</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">IoT</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Blockchain</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F0F9FF;color:#0369A1;letter-spacing:.04em;">Leadership</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>9 months</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate · Working professional · Leadership/managerial role · Digital transformation interest</span></span>
+    </div>
+  </div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      Digital strategy, AI & ML for leaders, IoT, blockchain, cloud computing, data-driven decision-making, agile transformation, digital product management
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> Mid-to-senior managers and executives wanting to lead digital transformation and AI strategy at an organisational level
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> No campus requirement · Live online sessions</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">₹2.8L + GST<small>2 × ₹1.4L · Instalment II: Sep 2026</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=iitk-cdao-eicta" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
+      <a href="https://www.jaroeducation.com/chief-digital-ai-officer-program-eicta-consortium" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
+    </div>
+  </div>
+</div><div class="pcard" data-card data-type="leadership" id="iitk-cdao-eict">
+  <div class="pcard-head">
+    <div class="pcard-inst">IIT Kanpur — EICT Academy · NIRF #5 · MeitY · EICT Academy</div>
+    <div class="pcard-title">Chief Digital & AI Officer (CDAO) Programme — EICT Academy</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F0F9FF;color:#0369A1;letter-spacing:.04em;">CDAO</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">AI Leadership</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Digital Transformation</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Senior Leaders</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>9 months</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate · 10+ yrs exp preferred · Senior management / executive track</span></span>
+    </div>
+  </div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      Advanced digital strategy, AI deployment at scale, organisational AI maturity models, quantum computing primer, AI ethics and governance, enterprise digital transformation
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> Senior executives, VPs, directors targeting Chief Digital Officer or Chief AI Officer roles in their organisations
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> Campus immersion modules available</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">₹4.2L + GST<small>Premium batch · Senior cohort</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=iitk-cdao-eict" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
+      <a href="https://www.jaroeducation.com/chief-digital-ai-officer-program-eict-academy-iit-kanpur" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
+    </div>
+  </div>
+</div><div class="pcard" data-card data-type="product" id="iitr-product">
+  <div class="pcard-head">
+    <div class="pcard-inst">IIT Roorkee · NIRF #7</div>
+    <div class="pcard-title">Strategic Product Management Certification</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#FFFBEB;color:#B45309;letter-spacing:.04em;">Product Management</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#FFF7ED;color:#F97316;letter-spacing:.04em;">Analytics</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">AI Product</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Strategy</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">BYOP</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>5 months</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate · Working professional · Product/tech/business background</span></span>
+    </div>
+  </div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      Product strategy, user research, analytics for PMs, AI product roadmapping, data-driven product decisions, go-to-market, A/B testing, product metrics
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> Product managers, engineers and business analysts wanting to formalise product skills with an IIT credential and hands-on BYOP (Build Your Own Product) project
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> No campus requirement</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">~₹1.5L + GST<small>EMI available · BYOP framework</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=iitr-product" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
+      <a href="https://www.jaroeducation.com/strategic-product-certification-iit-roorkee" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
+    </div>
+  </div>
+</div><div class="pcard" data-card data-type="leadership" id="iima-cio-cto">
+  <div class="pcard-head">
+    <div class="pcard-inst">IIM Ahmedabad · NIRF #1 Management · AACSB</div>
+    <div class="pcard-title">IT Management & Strategic Business Leadership (Future CIO/CTO Programme)</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">CIO/CTO</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">IT Strategy</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#EFF6FF;color:#2563EB;letter-spacing:.04em;">AI</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Data Governance</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Digital Leadership</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>~4 months</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate · Working professional · Senior IT managers, directors, VPs, heads of technology</span></span>
+    </div>
+  </div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      IT strategy, data management and analytics, AI/ML for tech leaders, platform economics, digital transformation, cybersecurity governance, IT project management, GenAI at enterprise scale
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> Senior IT professionals, CIOs and CTOs wanting the IIM Ahmedabad credential; tech leaders moving from operational to strategic roles
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> IIM Ahmedabad campus immersion included</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">~₹4L + GST<small>Premium IIM-A credential · EMI available</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=iima-cio-cto" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
+      <a href="https://www.jaroeducation.com/it-management-strategic-business-leadership-future-cio-cto-iim-ahmedabad" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
+    </div>
+  </div>
+</div><div class="pcard" data-card data-type="business" id="adani-biz-analytics">
+  <div class="pcard-head">
+    <div class="pcard-inst">Adani Institute of Digital Technology Management (AIDTM) · Industry-backed institution</div>
+    <div class="pcard-title">Executive Programme in Business Analytics</div>
+    <div class="pcard-tags" style="gap:.25rem;display:flex;flex-wrap:wrap;margin-bottom:.6rem;"><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Business Analytics</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Digital Technology</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Industry 4.0</span><span style="display:inline-flex;align-items:center;font-size:.58rem;font-weight:700;padding:.12rem .45rem;border-radius:3px;background:#F1F5F9;color:#475569;letter-spacing:.04em;">Adani Group</span></div>
+    <div class="pcard-meta" style="flex-wrap:wrap;gap:.5rem;">
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">⏱</span><strong>~6 months</strong></span>
+      <span style="display:flex;align-items:center;gap:.25rem;"><span style="font-size:.75rem;">👤</span><span style="font-size:.72rem;color:var(--text-muted);">Graduate · Working professional · Business or technology background</span></span>
+    </div>
+  </div>
+  <div style="padding:0 1.25rem .75rem;">
+    <div style="background:var(--surface);border-radius:var(--r);padding:.75rem;font-size:.73rem;color:var(--text-muted);line-height:1.7;margin-bottom:.6rem;">
+      <strong style="color:var(--text);display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;">Skills covered</strong>
+      Business analytics fundamentals, data-driven decision making, Industry 4.0 analytics applications, digital technology management, analytics tools and dashboards
+    </div>
+    <div style="font-size:.72rem;color:var(--text-muted);line-height:1.65;">
+      <strong style="color:var(--text);">Best for:</strong> Professionals in manufacturing, infrastructure, energy, logistics and industrial sectors wanting analytics skills with an industry-backed credential
+    </div>
+    <div style="font-size:.7rem;color:var(--text-muted);margin-top:.35rem;"><strong style="color:var(--text);">Campus:</strong> No campus requirement</div>
+  </div>
+  <div class="pcard-foot">
+    <div class="pcard-fee">~₹1.5–2L + GST<small>EMI available</small></div>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a href="/apply.html?p=adani-biz-analytics" class="enroll" style="background:var(--green-dim);color:var(--green);border:1px solid rgba(0,200,150,.2);padding:.3rem .65rem;border-radius:var(--r);font-size:.72rem;font-weight:700;text-decoration:none;">Enquire</a>
+      <a href="https://www.jaroeducation.com/executive-program-in-business-analytics-adani-institute-of-digital-technology-management" target="_blank" rel="noopener" class="enroll enroll-jaro">Enroll ★↗</a>
+    </div>
+  </div>
+</div></div>
+  <p style="font-size:.7rem;color:var(--text-muted);margin-top:1.25rem;">★ = Enrollment partner available (application support, EMI, career services). Fees are indicative — verify before enrolling. Programs verified June 2026.</p>
 </div>
-<footer class="footer"><div class="footer-grid inner"><div class="footer-brand"><div class="footer-logo"><span class="ds">Data</span>ScienceCourse.in</div><p>India's most complete guide to data science and AI certification programs from IITs and IIMs — 2026.</p></div>
-<div class="fcol"><div class="fcol-title">IIT Programs ★</div><ul>
-<li><a href="https://www.jaroeducation.com/post-graduate-certificate-programme-in-applied-data-science-ai-iit-roorkee/" target="_blank" rel="noopener">IIT Roorkee DS & AI</a></li>
-<li><a href="https://www.jaroeducation.com/executive-certification-in-advanced-data-science-applications-iitm-pravartak" target="_blank" rel="noopener">IIT Madras Adv DS</a></li>
-<li><a href="https://www.jaroeducation.com/advanced-generative-ai-machine-learning-iitm-pravartak" target="_blank" rel="noopener">IIT Madras GenAI</a></li>
+
+<!-- NON-JARO SECTION -->
+<div style="background:var(--white);border-top:1px solid var(--border);padding:52px 4%;">
+  <div class="inner">
+    <span class="eyebrow">Also available in India — context only</span>
+    <h2 style="font-family:var(--font-head);font-size:1.4rem;font-weight:700;color:var(--text);letter-spacing:-.02em;margin-bottom:.5rem;">Other data science programs available in India</h2>
+    <p style="font-size:.845rem;color:var(--text-muted);margin-bottom:1.25rem;">These programs are available through direct enrollment on their respective official platforms. They are listed here for completeness — <strong>no enrollment support or EMI facilitation available for these</strong>. Credential weight and program quality vary significantly.</p>
+    <div class="non-jaro-grid"><div style="background:var(--white);border-radius:var(--r-lg);border:1px solid var(--border);padding:1.25rem;">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:.5rem;">
+    <div style="font-family:var(--font-head);font-size:.9rem;font-weight:700;color:var(--text);">IBM Data Science Professional Certificate</div>
+    <span style="font-size:.62rem;font-weight:700;background:var(--surface);border:1px solid var(--border);color:var(--text-muted);padding:.12rem .45rem;border-radius:3px;white-space:nowrap;">Coursera</span>
+  </div>
+  <div style="font-size:.78rem;color:var(--text-muted);line-height:1.75;">Self-paced online · ~6 months · No coding prerequisite · Beginner-friendly · Python, SQL, ML basics · Industry-recognised for entry-level roles</div>
+</div><div style="background:var(--white);border-radius:var(--r-lg);border:1px solid var(--border);padding:1.25rem;">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:.5rem;">
+    <div style="font-family:var(--font-head);font-size:.9rem;font-weight:700;color:var(--text);">Google Advanced Data Analytics Certificate</div>
+    <span style="font-size:.62rem;font-weight:700;background:var(--surface);border:1px solid var(--border);color:var(--text-muted);padding:.12rem .45rem;border-radius:3px;white-space:nowrap;">Coursera / Google Career Certificates</span>
+  </div>
+  <div style="font-size:.78rem;color:var(--text-muted);line-height:1.75;">Self-paced · Python, Tableau, statistical analysis, regression · Designed for career switchers into analytics · No degree required</div>
+</div><div style="background:var(--white);border-radius:var(--r-lg);border:1px solid var(--border);padding:1.25rem;">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:.5rem;">
+    <div style="font-family:var(--font-head);font-size:.9rem;font-weight:700;color:var(--text);">Microsoft Azure AI Engineer (AZ-104/AZ-204)</div>
+    <span style="font-size:.62rem;font-weight:700;background:var(--surface);border:1px solid var(--border);color:var(--text-muted);padding:.12rem .45rem;border-radius:3px;white-space:nowrap;">Microsoft Learn / Exam track</span>
+  </div>
+  <div style="font-size:.78rem;color:var(--text-muted);line-height:1.75;">Cloud AI certification on Azure platform · Vendor credential · Strong for cloud-based AI deployment roles in Indian IT sector</div>
+</div><div style="background:var(--white);border-radius:var(--r-lg);border:1px solid var(--border);padding:1.25rem;">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:.5rem;">
+    <div style="font-family:var(--font-head);font-size:.9rem;font-weight:700;color:var(--text);">MIT MicroMasters in Data Science</div>
+    <span style="font-size:.62rem;font-weight:700;background:var(--surface);border:1px solid var(--border);color:var(--text-muted);padding:.12rem .45rem;border-radius:3px;white-space:nowrap;">edX (Massachusetts Institute of Technology)</span>
+  </div>
+  <div style="font-size:.78rem;color:var(--text-muted);line-height:1.75;">Graduate-level online certificate · Statistics, data analysis, ML, big data · Stackable toward MIT master's degree · Higher rigor than most certificates</div>
+</div><div style="background:var(--white);border-radius:var(--r-lg);border:1px solid var(--border);padding:1.25rem;">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:.5rem;">
+    <div style="font-family:var(--font-head);font-size:.9rem;font-weight:700;color:var(--text);">IIT Madras Online BS in Data Science & Programming</div>
+    <span style="font-size:.62rem;font-weight:700;background:var(--surface);border:1px solid var(--border);color:var(--text-muted);padding:.12rem .45rem;border-radius:3px;white-space:nowrap;">Direct — IIT Madras (bs.iitm.ac.in)</span>
+  </div>
+  <div style="font-size:.78rem;color:var(--text-muted);line-height:1.75;">Full degree program (4 years) · Extremely affordable · NIRF #1 institution · Ideal for those wanting a complete DS degree rather than certificate · Apply directly via official IIT Madras portal</div>
+</div><div style="background:var(--white);border-radius:var(--r-lg);border:1px solid var(--border);padding:1.25rem;">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:.5rem;">
+    <div style="font-family:var(--font-head);font-size:.9rem;font-weight:700;color:var(--text);">PG Diploma in Data Science</div>
+    <span style="font-size:.62rem;font-weight:700;background:var(--surface);border:1px solid var(--border);color:var(--text-muted);padding:.12rem .45rem;border-radius:3px;white-space:nowrap;">Multiple Indian universities (IIIT Bangalore, Great Learning, BITS Pilani partnerships)</span>
+  </div>
+  <div style="font-size:.78rem;color:var(--text-muted);line-height:1.75;">1-year online PG diploma programs · Mid-tier credential · Industry-aligned curriculum · Wide range of fees · Research specific institutions before enrolling</div>
+</div><div style="background:var(--white);border-radius:var(--r-lg);border:1px solid var(--border);padding:1.25rem;">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:.5rem;">
+    <div style="font-family:var(--font-head);font-size:.9rem;font-weight:700;color:var(--text);">AWS Machine Learning Specialty</div>
+    <span style="font-size:.62rem;font-weight:700;background:var(--surface);border:1px solid var(--border);color:var(--text-muted);padding:.12rem .45rem;border-radius:3px;white-space:nowrap;">Amazon Web Services (exam-based)</span>
+  </div>
+  <div style="font-size:.78rem;color:var(--text-muted);line-height:1.75;">Vendor certification for ML on AWS cloud · Strong for cloud-based data engineering and MLOps roles · Requires hands-on AWS experience</div>
+</div><div style="background:var(--white);border-radius:var(--r-lg);border:1px solid var(--border);padding:1.25rem;">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:.5rem;">
+    <div style="font-family:var(--font-head);font-size:.9rem;font-weight:700;color:var(--text);">Professional Certificate in Data Science</div>
+    <span style="font-size:.62rem;font-weight:700;background:var(--surface);border:1px solid var(--border);color:var(--text-muted);padding:.12rem .45rem;border-radius:3px;white-space:nowrap;">Various platforms (Simplilearn, upGrad, NIIT)</span>
+  </div>
+  <div style="font-size:.78rem;color:var(--text-muted);line-height:1.75;">Self-paced or instructor-led · Typically 6–12 months · No institutional credential · Widely advertised but lower credential weight in India's senior hiring market compared to IIT/IIM programs</div>
+</div></div>
+  </div>
+</div>
+
+<div class="cta-band">
+  <div>
+    <h2>Not sure which program fits your profile?</h2>
+    <p>Free advisor compares all 16 programs and matches the right one in 20 minutes.</p>
+  </div>
+  <div class="cta-btns">
+    <a href="/apply.html" class="btn btn-dark btn-lg">Get free counselling →</a>
+    <a href="/compare.html" class="btn btn-ghost btn-lg" style="border-color:rgba(0,0,0,.3);">Compare programs</a>
+  </div>
+</div>
+
+<footer class="footer"><div class="footer-grid inner">
+<div class="footer-brand"><div class="footer-logo"><span class="ds">Data</span>ScienceCourse.in</div><p>India's most complete guide to data science and AI programs from IITs, IIMs and global institutions — 2026.</p></div>
+<div class="fcol"><div class="fcol-title">Pure DS / ML / AI ★</div><ul>
+<li><a href="https://www.jaroeducation.com/post-graduate-certificate-programme-in-applied-data-science-ai-iit-roorkee/" target="_blank" rel="noopener">IIT Roorkee Applied DS & AI</a></li>
+<li><a href="https://www.jaroeducation.com/advanced-generative-ai-machine-learning-iitm-pravartak" target="_blank" rel="noopener">IIT Madras ML, GenAI & LLMs</a></li>
+<li><a href="https://www.jaroeducation.com/executive-certification-in-advanced-data-science-applications-iitm-pravartak" target="_blank" rel="noopener">IIT Madras Advanced DS</a></li>
 <li><a href="https://www.jaroeducation.com/advanced-professional-certification-programme-in-data-science-machine-learning-eict-iit-guwahati" target="_blank" rel="noopener">IIT Guwahati DS & ML</a></li>
-</ul></div>
-<div class="fcol"><div class="fcol-title">More ★</div><ul>
 <li><a href="https://www.jaroeducation.com/professional-certificate-programme-applied-analytic-gen-ai-business-decisions-iim-kozhikode" target="_blank" rel="noopener">IIM Kozhikode Analytics</a></li>
-<li><a href="https://www.jaroeducation.com/advanced-data-science-certificate-program-rotman-school-of-management-uoft-iitm-pravartak-technology-innovation-hub-of-iit-madras" target="_blank" rel="noopener">IIT Madras + Rotman</a></li>
+</ul></div>
+<div class="fcol"><div class="fcol-title">AI Leadership ★</div><ul>
+<li><a href="https://www.jaroeducation.com/chief-digital-ai-officer-program-eicta-consortium" target="_blank" rel="noopener">IIT Kanpur CDAO</a></li>
+<li><a href="https://www.jaroeducation.com/executive-programme-in-artificial-intelligence-and-cyber-security-for-organizations-iim-indore" target="_blank" rel="noopener">IIM Indore AI & Cyber</a></li>
+<li><a href="https://www.jaroeducation.com/pg-certificate-programme-in-business-analytics-and-applications-iim-trichy" target="_blank" rel="noopener">IIM Trichy Biz Analytics</a></li>
 </ul></div>
 <div class="fcol"><div class="fcol-title">Explore</div><ul>
 <li><a href="/programs/">All programs</a></li>
@@ -118,7 +561,12 @@
 <li><a href="/apply.html">Free counselling</a></li>
 <li><a href="/privacy.html">Privacy</a></li>
 <li><a href="/disclaimer.html">Disclaimer</a></li>
-</ul></div></div>
-<div class="footer-bottom inner"><span>© 2026 datasciencecourse.in · Independent portal. ★ = enrollment partner available.</span><span><a href="/privacy.html">Privacy</a> · <a href="/disclaimer.html">Disclaimer</a></span></div>
-</footer><div class="sticky-mb"><a href="tel:+918080089898" class="smb-call">📞 Call</a><a href="/apply.html" class="smb-cta">Free counselling →</a></div><script src="/assets/main.js?v=1"></script>
+</ul></div>
+</div>
+<div class="footer-bottom inner">
+<span>© 2026 datasciencecourse.in · Independent portal. ★ = enrollment partner available.</span>
+<span><a href="/privacy.html">Privacy</a> · <a href="/disclaimer.html">Disclaimer</a></span>
+</div></footer>
+<div class="sticky-mb"><a href="tel:+918080089898" class="smb-call">📞 Call</a><a href="/apply.html" class="smb-cta">Free counselling →</a></div>
+<script src="/assets/main.js?v=1"></script>
 </body></html>
