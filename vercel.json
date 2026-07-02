@@ -55,5 +55,13 @@
       "memory": 512,
       "maxDuration": 10
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "https://www.datasciencecourse.in/:path*",
+      "destination": "https://datasciencecourse.in/:path*",
+      "permanent": true
+    }
+  ],
+  "trailingSlash": false
 }
