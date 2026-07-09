@@ -56,18 +56,5 @@
       "maxDuration": 10
     }
   },
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.datasciencecourse.in"
-        }
-      ],
-      "destination": "https://datasciencecourse.in/:path*",
-      "permanent": true
-    }
-  ],
   "trailingSlash": false
 }
