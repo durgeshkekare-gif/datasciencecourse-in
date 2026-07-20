@@ -61,5 +61,18 @@
     }
   },
   "trailingSlash": false,
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.datasciencecourse.in"
+        }
+      ],
+      "destination": "https://datasciencecourse.in/:path*",
+      "permanent": true
+    }
+  ]
 }
